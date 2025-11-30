@@ -1,0 +1,117 @@
+<body style="background-color: rgb(136, 209, 229);">
+    <h1> 👑💗 بصي يا ست البنات </h1><br>
+    <h2>  ❤️ انا عامل البتاع ده مخصوص عشان خاطر عيونك العثلي دول </h2><br>
+<h1>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>بحبك</title>
+</head>
+<body>
+    <p>😘 اول صوره لينا سوا يا توتا </p>
+    
+    <img src="phot.jpg.jpg" alt="صورة أولى معًا">
+    
+    <br><br>
+<h1>❤️ انا بجد بحبك يا حبيبتي </h1><br>
+<h1> 😻 ربنا يخليكي ليا يا قطتي يا قمر</h1><br>
+<h1>ـــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ</h1>
+<h1><p>😘 تاني صوره لينا سوا يا توتا </p></h1>
+<img src="pic.jpg.jpg" alt="صورة أولى معًا">
+<h1>😂 الود ودي احط صورنا كلها مع بعض هنا بس مش لاقي غير دول</h1>
+<h1>😍 بحبك برضووو </h1>
+<h1>😉 الايام جايه كتير يا روحي عااادي </h1>
+
+
+    </body>
+</html>
+</h1>
+</body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Big Slow Hearts Everywhere</title>
+<style>
+    body {
+        background-color: black;
+        overflow:auto;
+        margin: 0;
+    }
+
+    .heart {
+        position: absolute;
+        color: red;
+        font-size: 60px; /* القلوب أكبر */
+        opacity: 0;
+    }
+
+    @keyframes up {
+        0% {transform: translateY(120vh) scale(1); opacity:1;}
+        100% {transform: translateY(-30vh) scale(1.6); opacity:0;}
+    }
+
+    @keyframes down {
+        0% {transform: translateY(-30vh) scale(1); opacity:1;}
+        100% {transform: translateY(120vh) scale(1.6); opacity:0;}
+    }
+
+    @keyframes left {
+        0% {transform: translateX(120vw) scale(1); opacity:1;}
+        100% {transform: translateX(-30vw) scale(1.6); opacity:0;}
+    }
+
+    @keyframes right {
+        0% {transform: translateX(-30vw) scale(1); opacity:1;}
+        100% {transform: translateX(120vw) scale(1.6); opacity:0;}
+    }
+</style>
+</head>
+<body>
+
+<script>
+    function createHeart(direction) {
+        const heart = document.createElement("div");
+        heart.classList.add("heart");
+        heart.innerHTML = "❤";
+
+        // مدة أطول = سرعة أقل
+        heart.style.animationDuration = (Math.random() * 4 + 6) + "s";
+
+        if (direction === "up") {
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.bottom = "-20vh";
+            heart.style.animationName = "up";
+        }
+        else if (direction === "down") {
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.top = "-20vh";
+            heart.style.animationName = "down";
+        }
+        else if (direction === "left") {
+            heart.style.top = Math.random() * 100 + "vh";
+            heart.style.right = "-20vw";
+            heart.style.animationName = "left";
+        }
+        else if (direction === "right") {
+            heart.style.top = Math.random() * 100 + "vh";
+            heart.style.left = "-20vw";
+            heart.style.animationName = "right";
+        }
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 9000);
+    }
+
+    // عدد أكتر من القلوب
+    setInterval(() => createHeart("up"), 400);
+    setInterval(() => createHeart("down"), 440);
+    setInterval(() => createHeart("left"), 410);
+    setInterval(() => createHeart("right"), 450);
+</script>
+
+</body>
+</html>
+
